@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  --bg-colour: #164854;
+  --text-color: #F6F5F5;
+  --accent-colour: #53E6C1;
+  --dark-acc-colour: #071E3D;
+}
+
+body {
+  background: #164854;
+  color: #F6F5F5;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  width: 100vw;
+  background: #164854;
+  z-index: 999;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px 0.5px var(--accent-colour);
+}
+header .Logo img {
+  height: 1em;
+}
+header .inner {
+  width: 90%;
+  display: flex;
+  place-content: space-between;
+  margin: 0 auto;
+  max-width: 1692px;
+}
+header .inner .mobile-menu-open {
+  cursor: pointer;
+}
+header .inner a {
+  color: #FFFFFF;
+}
+
+nav {
+  display: none;
+  position: fixed;
+  width: 50%;
+  padding: 1em;
+  right: 0;
+  top: 0;
+  background: var(--bg-colour);
+}
+nav ul {
+  padding-top: 2em;
+}
+nav ul a {
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: left;
+}
+nav ul a:hover {
+  font-weight: bold;
+}
+nav #menu-close {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+nav.menu-show {
+  display: block;
+}
+
+.hero-ill {
+  background: linear-gradient(#76d5db, #164854);
+  overflow: hidden;
+}
+
+.hero-svg {
+  position: absolute;
+  left: -30%;
+  top: 4%;
+  transform: scale(1.6);
+  overflow: hidden;
+}
+
+.hero-text {
+  width: 90%;
+  max-width: 1744.7px;
+  z-index: 1;
+  margin: auto;
+  text-align: center;
+  padding: 0;
+}
+
+.welcome {
+  left: 0;
+  margin-top: 70%;
+  max-width: 991.5px;
+  margin-bottom: 0;
+}
+.welcome .content {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+.welcome .content h2 {
+  margin-bottom: 0em;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+.welcome .content h1 {
+  margin: auto 0.1rem;
+  font-size: 3em;
+}
+.welcome .content p {
+  color: var(--accent-colour);
+}
+.welcome .content p span {
+  color: var(--text-color);
+}
+.welcome .content .welcome-cta {
+  color: var(--dark-acc-colour);
+  background: var(--accent-colour);
+  font-size: 1.5em;
+  display: box;
+  padding: 2px 8px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.outer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.icon {
+  color: var(--accent-colour);
+  font-size: 1.875rem;
+  display: box;
+  padding: 2rem 1rem;
+}
+
+.acad-logo {
+  display: none;
+}
+
+.acad-link {
+  color: var(--accent-colour);
+}
+
+.project-link-btn {
+  background: rgba(118, 213, 219, 0.69);
+  color: white;
+  font-size: 1.5em;
+  padding: 2px 6px;
+  border-radius: 5px;
+  position: relative;
+  margin: auto;
+}
+
+section {
+  margin-top: 51px;
+  padding: 0.1em 1em;
+  width: 90%;
+  max-width: 1712.7px;
+  background: linear-gradient(to bottom, rgba(7, 30, 61, 0.2), rgba(7, 30, 61, 0));
+  z-index: 1;
+  margin: 5rem auto;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.container {
+  background: rgba(136, 243, 216, 0.2);
+  border-radius: 20px;
+  margin-top: 1em;
+  padding: 1em;
+  min-width: 250px;
+  max-width: 1672.7px;
+}
+
+.darkerContainer {
+  background: rgba(7, 30, 61, 0.6);
+  border-radius: 20px;
+  padding: 1em;
+  width: 90%;
+  max-width: 1140px;
+}
+
+.project, .about {
+  width: 90%;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project img, .about img {
+  position: relative;
+  border-radius: 20px;
+  width: 100%;
+  z-index: 2;
+}
+.project .darkerContainer, .about .darkerContainer {
+  position: relative;
+  z-index: 5;
+  margin-top: -30px;
+  background: linear-gradient(to bottom, rgba(7, 30, 61, 0.8), rgba(7, 30, 61, 0.6));
+}
+.project ul, .about ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project ul li, .about ul li {
+  color: #c2c2c2;
+  background: rgba(196, 196, 196, 0.55);
+  padding: 2px 6px;
+  border-radius: 5px;
+  margin: 5px;
+  display: block;
+}
+
+.facts {
+  display: block;
+  position: relative;
+}
+.facts:before {
+  content: " i can't choose between tea and coffee\ai prefer bienge watching series\ai prefer subbed over dubbed animae\a feelings ain't facts \ait is possible but i forgot how";
+  white-space: pre;
+  background: var(--accent-colour);
+  position: absolute;
+  display: box;
+  bottom: 50%;
+  left: 0;
+  padding: 1em;
+  border-radius: 20px;
+  color: var(--dark-acc-colour);
+  transform: scale(0);
+  transform-origin: bottom;
+  transition: all ease-in-out 200ms;
+}
+.facts:hover::before {
+  transform-origin: bottom;
+  transform: scale(1);
+  transition: all ease-in-out 200ms;
+}
+
+.contact ul {
+  display: flex;
+  flex-direction: column;
+}
+.contact ul li {
+  margin: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 1em;
+}
+.contact ul .icon {
+  padding: 0;
+  margin-bottom: -0.234375em;
+}
+.contact ul .iconTxt {
+  padding-left: 1em;
+  color: var(--accent-colour);
+}
+.contact label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+.contact input[type=submit] {
+  background-color: var(--accent-colour);
+  color: var(--dark-acc-colour);
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: 0.8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+  }
+  header .mobile-menu-open,
+header .mobile-menu-close {
+    display: none;
+  }
+
+  nav {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 50%;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  nav ul .primary-nav {
+    padding: 0;
+    margin: 0;
+  }
+  nav ul a {
+    font-size: 1em;
+    padding: 0;
+    text-shadow: 0px 10px 4px black;
+  }
+  nav ul a:hover {
+    transform: scale(1.1);
+  }
+  nav ul .active {
+    font-weight: bold;
+    color: #53E6C1;
+    position: relative;
+  }
+  nav ul .active:before {
+    content: "";
+    position: absolute;
+    bottom: -0.1rem;
+    left: 0;
+    width: 100%;
+    background: #53E6C1;
+    height: 0.1em;
+  }
+
+  .academics-list .container {
+    text-align: left;
+  }
+  .academics-list .container .acad-logo {
+    all: unset;
+    position: relative;
+    float: right;
+    right: o;
+    top: -3em;
+  }
+  .academics-list .container .pax {
+    top: -4.5em;
+  }
+  .academics-list .container .project-list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .academics-list .container .project {
+    display: grid;
+    grid-template-columns: [col1] 30% [col2] 10% [col3] 10% [col4] 50% [col5];
+    grid-template-rows: [r1] 100% [r12];
+    align-content: stretch;
+    margin-top: 3em;
+    width: 100%;
+  }
+  .academics-list .container .project img {
+    position: relative;
+    z-index: 2;
+    grid-column: col1/span 3;
+    grid-row: r1;
+  }
+  .academics-list .container .project .darkerContainer {
+    position: relative;
+    grid-column: col3/span 2;
+    grid-row: r1;
+    width: auto;
+    margin: auto;
+    z-index: 10;
+  }
+  .academics-list .container .project .darkerContainer .project-link-btn {
+    float: right;
+  }
+
+  .about .outter {
+    display: grid;
+    grid-template-columns: [col1] 30% [col2] 10% [col3] 10% [col4] 50% [col5];
+    grid-template-rows: [r1] 100% [r12];
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  .about .outter .myImage {
+    grid-column: col1/span 2;
+    grid-row: r1;
+    width: 100%;
+  }
+  .about .outter .darkerContainer {
+    grid-column: col2/span 3;
+    grid-row: r1;
+    margin: auto 0;
+    top: 0;
+    padding: 0;
+  }
+  .about .outter .darkerContainer .content {
+    margin: 1em;
+  }
+
+  .outter {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    top: 2em;
+  }
+  .outter img {
+    width: 60%;
+  }
+  .outter .darkerContainer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    top: 1em;
+  }
+
+  .contact .outter {
+    flex-direction: column;
+  }
+
+  .hero-svg {
+    right: 20%;
+    top: 0;
+    width: 110%;
+  }
+
+  .welcome {
+    margin-top: 65%;
+  }
+}
+@media screen and (min-width: 1152px) {
+  body {
+    font-size: 20px;
+  }
+
+  .inner {
+    width: 80%;
+  }
+  .inner nav {
+    width: 40%;
+  }
+
+  .hero-ill {
+    overflow: hidden;
+    width: 100%;
+    background: linear-gradient(#76d5db, #164854);
+  }
+
+  .hero-svg {
+    position: relative;
+    transform: scale(1.1);
+    left: 5em;
+    top: 2em;
+    width: 100%;
+  }
+
+  section {
+    margin: 5em auto;
+    padding: 3%;
+  }
+  section .container {
+    padding: 3%;
+  }
+
+  .welcome {
+    display: block;
+    position: relative;
+    width: 50%;
+    text-align: left;
+    float: left;
+    margin-top: -55%;
+    background: linear-gradient(to right, rgba(7, 30, 61, 0.4), rgba(7, 30, 61, 0.2));
+  }
+
+  .academics-list .container .project img {
+    grid-column: col1/span 2;
+  }
+  .academics-list .container .project .darkerContainer {
+    grid-column: col2/span 3;
+  }
+
+  .contact .outter {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    margin: auto;
+    position: relative;
+  }
+  .contact .outter ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  .contact .outter input[type=submit] {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 25px;
+  }
+
+  .hero-svg {
+    position: relative;
+    left: 5em;
+    top: -2em;
+    width: 100%;
+  }
+
+  .welcome {
+    margin-top: -50%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}/*# sourceMappingURL=main.css.map */
